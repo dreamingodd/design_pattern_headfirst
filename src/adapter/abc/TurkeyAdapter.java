@@ -1,24 +1,26 @@
 package adapter.abc;
 
-public class TurkeyAdapter implements Duck{
+public class TurkeyAdapter implements Duck {
 
-	private Turkey turkey;
-	
-	public TurkeyAdapter() {}
-	public TurkeyAdapter(Turkey turkey) {
-		this.turkey = turkey;
-	}
-	
-	@Override
-	public void quack() {
-		turkey.gobble();
-	}
+    private Turkey turkey;
 
-	@Override
-	public void fly() {
-		for (int i=0; i<5; i++){
-			turkey.fly();
-		}
-	}
-	
+    public TurkeyAdapter() {
+    }
+
+    public TurkeyAdapter(Turkey turkey) {
+        this.turkey = turkey;
+    }
+
+    @Override
+    public void quack() {
+        turkey.gobble();
+    }
+
+    @Override
+    public void fly() {
+        for (int i = 0; i < 5; i++) {
+            turkey.fly();
+        }
+    }
+
 }

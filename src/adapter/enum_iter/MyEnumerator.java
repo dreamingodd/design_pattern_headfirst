@@ -11,25 +11,25 @@ import java.util.Enumeration;
 @SuppressWarnings("rawtypes")
 public class MyEnumerator implements Enumeration {
 
-	int count;
-	int length;
-	Object[] objArray;
-	
-	public MyEnumerator(int count, int length, Object[] objArray) {
-		super();
-		this.count = count;
-		this.length = length;
-		this.objArray = objArray;
-	}
+    int count;
+    int length;
+    Object[] objArray;
 
-	@Override
-	public boolean hasMoreElements() {
-		return count < length;
-	}
+    public MyEnumerator(int count, int length, Object[] objArray) {
+        super();
+        this.count = count;
+        this.length = length;
+        this.objArray = objArray;
+    }
 
-	@Override
-	public Object nextElement() {
-		return objArray[count++];
-	}
+    @Override
+    public boolean hasMoreElements() {
+        return count < length;
+    }
+
+    @Override
+    public Object nextElement() {
+        return objArray[count++];
+    }
 
 }

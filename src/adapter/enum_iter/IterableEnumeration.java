@@ -12,21 +12,24 @@ import java.util.Iterator;
 @SuppressWarnings("rawtypes")
 public class IterableEnumeration implements Enumeration {
 
-	private Iterator it;
-	
-	public IterableEnumeration(Iterable it) {
-		this.it = it.iterator();
-	}
-	
-	@Override
-	public boolean hasMoreElements() {
-		return it.hasNext();
-	}
+    private Iterator it;
 
-	@Override
-	public Object nextElement() {
-		return it.next();
-	}
-	
-	
+    public IterableEnumeration(Iterable it) {
+        this.it = it.iterator();
+    }
+
+    @Override
+    public boolean hasMoreElements() {
+        return it.hasNext();
+    }
+
+    @Override
+    public Object nextElement() {
+        return it.next();
+    }
+
+    public void remove() {
+        it.remove();
+    }
+
 }

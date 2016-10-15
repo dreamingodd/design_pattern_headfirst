@@ -1,6 +1,14 @@
 package adapter.abc;
 
+/**
+ * Adaptee
+ * ±ª  ≈‰Ω”ø⁄
+ *
+ * @author Dreamingodd
+ *
+ */
 public interface Turkey {
-	void gobble();
-	void fly();
+    void gobble();
+
+    void fly();
 }
