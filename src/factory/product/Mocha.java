@@ -3,21 +3,21 @@ package factory.product;
 import factory.product.Beverage;
 
 public class Mocha extends CondimentDecorator {
-	
-	private Beverage beverage;
-	
-	public Mocha(Beverage beverage) {
-		this.beverage = beverage;
-	}
 
-	@Override
-	public String desc() {
-		return " macha" + beverage.desc();
-	}
+    private Beverage beverage;
 
-	@Override
-	public double cost() {
-		return beverage.cost() + 1;
-	}
-	
+    public Mocha(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    @Override
+    public String desc() {
+        return " macha" + beverage.desc();
+    }
+
+    @Override
+    public double cost() {
+        return beverage.cost() + 1;
+    }
+
 }

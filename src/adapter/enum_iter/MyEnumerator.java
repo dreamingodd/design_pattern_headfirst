@@ -5,7 +5,7 @@ import java.util.Enumeration;
 /**
  * This is my Enumeration Implementation
  * 
- * @author ywd
+ * @author Dreamingodd
  *
  */
 @SuppressWarnings("rawtypes")

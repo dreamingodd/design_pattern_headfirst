@@ -19,7 +19,7 @@ public class ArrayListTest {
         list.add(3);
         list.add(4);
 
-        Enumeration ie = new IterableEnumeration(list);
+         Enumeration ie = new IterableEnumeration(list);
 
         while (ie.hasMoreElements()) {
             System.out.println(ie.nextElement());

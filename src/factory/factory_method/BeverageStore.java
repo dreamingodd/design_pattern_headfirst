@@ -9,19 +9,19 @@ import factory.product.Beverage;
  *
  */
 public abstract class BeverageStore {
-	
-	Beverage beverage;
-	
-	public Beverage order(String type) {
-		
-		beverage = create(type);
-		
-		beverage.make(beverage.getName());
-		beverage.box(beverage.getName());
-		beverage.desc();
-		
-		return beverage;
-	}
-	
-	protected abstract Beverage create(String type);
+
+    Beverage beverage;
+
+    public Beverage order(String type) {
+
+        beverage = create(type);
+
+        beverage.make(beverage.getName());
+        beverage.box(beverage.getName());
+        beverage.desc();
+
+        return beverage;
+    }
+
+    protected abstract Beverage create(String type);
 }

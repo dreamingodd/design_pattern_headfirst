@@ -6,7 +6,7 @@ import java.util.Iterator;
 /**
  * 这里主要是Iterable , 不是Iterator
  * 
- * @author ywd
+ * @author Dreamingodd
  *
  */
 @SuppressWarnings("rawtypes")
