@@ -9,6 +9,12 @@ import observer.subject.RiskCommittee;
 import observer.subject.StockExchange;
 import observer.subject.TradeDepartment;
 
+/**
+ * This test uses observer model of JDK.
+ * 
+ * @author Dreamingodd
+ *
+ */
 public class TradeProcess {
     @SuppressWarnings("unused")
     public static void main(String[] args) {
