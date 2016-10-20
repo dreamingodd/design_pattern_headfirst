@@ -18,7 +18,7 @@ import command.control.RemoteControl;
  * @author Dreamingodd
  *
  */
-public class RemoteControlWithUndoTest {
+public class FacadeObserverControllerTest {
     public static void main(String[] args) {
         // appliance
         Door door = new Door();

@@ -2,19 +2,19 @@ package command.command;
 
 import command.appliance.Door;
 
-public class DoorOpenCommand implements Command{
-	private Door door;
+public class DoorOpenCommand implements Command {
+    private Door door;
 
-	public DoorOpenCommand(Door door) {
-		this.door = door;
-	}
-	
-	@Override
-	public void execute() {
-		door.open();
-	}
+    public DoorOpenCommand(Door door) {
+        this.door = door;
+    }
 
-	public void undo() {
-		door.close();
-	}
+    @Override
+    public void execute() {
+        door.open();
+    }
+
+    public void undo() {
+        door.close();
+    }
 }

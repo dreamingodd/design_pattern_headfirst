@@ -1,4 +1,5 @@
 package command.appliance;
+
 /**
  * Light Class
  * 
@@ -6,26 +7,28 @@ package command.appliance;
  *
  */
 public class Light {
-	// on/off
-	private String state;
-	
-	/**
-	 * */
-	public void on() {
-		state = "on";
-		System.out.println("Light is on...");
-	}
-	/**
-	 * */
-	public void off() {
-		state = "off";
-		System.out.println("Light is off...");
-	}
+    // on/off
+    private String state;
 
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
-	}
+    /**
+     * */
+    public void on() {
+        state = "on";
+        System.out.println("Light is on...");
+    }
+
+    /**
+     * */
+    public void off() {
+        state = "off";
+        System.out.println("Light is off...");
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 }

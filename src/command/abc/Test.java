@@ -9,18 +9,18 @@ import command.command.LightOnCommand;
 /**
  * Command Pattern Test
  * 
- * @author ywd
+ * @author Dreamingodd
  *
  */
 public class Test {
-	public static void main(String[] args) {
-		RemoteControl control = new RemoteControl();
-		Command lightOn = new LightOnCommand(new Light());
-		Command doorOpen= new DoorOpenCommand(new Door());
-		
-		control.setCommand(lightOn);
-		control.buttonWasPressed();
-		control.setCommand(doorOpen);
-		control.buttonWasPressed();
-	}
+    public static void main(String[] args) {
+        RemoteControl control = new RemoteControl();
+        Command lightOn = new LightOnCommand(new Light());
+        Command doorOpen = new DoorOpenCommand(new Door());
+
+        control.setCommand(lightOn);
+        control.buttonWasPressed();
+        control.setCommand(doorOpen);
+        control.buttonWasPressed();
+    }
 }
