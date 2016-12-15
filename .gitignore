@@ -3,3 +3,6 @@ bin
 .classpath
 .project
 .svn
+.idea
+*.iml
+out
